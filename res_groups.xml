@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <record id="view_res_groups_tree_ext" model="ir.ui.view">
+            <field name="name">res.groups.tree</field>
+            <field name="model">res.groups</field>
+            <field name="priority" eval="7"/>
+            <field name="arch" type="xml">
+                <tree string="Groups">
+                    <field name="category_id"/>
+                    <field name="name"/>
+                    <field name="by_dept"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_res_groups_ext_form_tree" model="ir.ui.view">
+            <field name="name">res.groups.ext.form</field>
+            <field name="model">res.groups</field>
+            <field name="priority" eval="8"/>
+            <field name="inherit_id" ref="base.view_groups_form"/>
+            <field name="arch" type="xml">
+                <notebook position ="before">
+                    <group><field name="by_dept"/></group>
+                </notebook>
+            </field>
+        </record>
+
+
+    </data>
+</openerp>
