@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 7.0-20130522-231057\n"
+"Project-Id-Version: OpenERP Server 7.0-20130626-231022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-29 16:30+0000\n"
-"PO-Revision-Date: 2014-09-29 16:30+0000\n"
+"POT-Creation-Date: 2014-09-30 08:58+0000\n"
+"PO-Revision-Date: 2014-09-30 08:58+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,13 +16,46 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: wkf_group_ext
+#: help:wkf.auddit.osv,cuid_auddit:0
+msgid "requests to be auddited by me"
+msgstr "需要我审核的申请"
+
+#. module: wkf_group_ext
+#: field:wkf.auddit.osv,cuid_is_creator:0
+msgid "created by me"
+msgstr "由我创建"
+
+#. module: wkf_group_ext
+#: model:ir.model,name:wkf_group_ext.model_res_groups
+msgid "Access Groups"
+msgstr "访问组"
+
+#. module: wkf_group_ext
 #: help:res.groups,by_dept:0
 msgid "whether the group users can only view their department-related bills."
 msgstr "标志位：当前组的用户是否只能查看当前部门的数据."
 
 #. module: wkf_group_ext
-#: model:ir.model.fields,field_description:wkf_group_ext.field_res_groups_by_dept
+#: model:ir.model,name:wkf_group_ext.model_wkf_auddit_osv
+msgid "wkf.auddit.osv"
+msgstr "wkf.auddit.osv"
+
+#. module: wkf_group_ext
+#: field:wkf.auddit.osv,cuid_auddit:0
+msgid "to be auddited by me"
+msgstr "需要我审核的"
+
+#. module: wkf_group_ext
+#: view:res.groups:0
+msgid "Groups"
+msgstr "组"
+
+#. module: wkf_group_ext
+#: help:wkf.auddit.osv,cuid_is_creator:0
+msgid "requests created by me"
+msgstr "我创建的"
+
+#. module: wkf_group_ext
 #: field:res.groups,by_dept:0
 msgid "By Dept"
 msgstr "按部门"
-
