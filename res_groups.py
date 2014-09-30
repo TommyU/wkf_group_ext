@@ -31,7 +31,4 @@ class wkf_res_groups_ext(osv.Model):
 
 wkf_res_groups_ext()
 
-# def is_global_user(cr, uid, group_category_id):
-#     cr.execute("""select count(*) from  res_groups_users_rel where uid= %d and gid  in
-# (select id from res_groups where category_id =%d);""",(uid,group_category_id))
-#     return cr.fetchall()[0][0]
+
